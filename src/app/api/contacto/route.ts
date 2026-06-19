@@ -1,9 +1,23 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: Request) {
   try {
+    if (!process.env.RESEND_API_KEY) {
+      return Response.json(
+        {
+          success: false,
+          message: "RESEND_API_KEY no configurada",
+        },
+        {
+          status: 500,
+        }
+      );
+    }
+
+    const resend = new Resend(
+      process.env.RESEND_API_KEY
+    );
+
     const {
       nombre,
       correo,
@@ -19,7 +33,7 @@ export async function POST(req: Request) {
       subject: `Nueva consulta: ${asunto}`,
 
       html: `
-        <div style="font-family: Arial, sans-serif;">
+        <div style="font-family: Arial, sans-serif; padding:20px;">
           <h2>Nueva Consulta desde AlgasMar Academy</h2>
 
           <p><strong>Nombre:</strong> ${nombre}</p>
@@ -39,6 +53,7 @@ export async function POST(req: Request) {
       success: true,
       data,
     });
+
   } catch (error) {
     console.error(error);
 
