@@ -74,12 +74,16 @@ export default function Footer() {
                 Cursos
               </Link>
 
-              <Link
-                href="/herramientas"
-                className="text-slate-400 hover:text-white transition"
-              >
-                Herramientas
-              </Link>
+              
+
+  <Link
+    href="/oceanografia"
+    className="text-slate-400 hover:text-white transition"
+  >
+    Centro Oceanográfico
+  </Link>
+
+
 
               <Link
                 href="/biblioteca"
@@ -115,6 +119,12 @@ export default function Footer() {
               >
                 Marketplace
               </Link>
+<Link
+  href="/herramientas"
+  className="text-slate-400 hover:text-white transition"
+>
+  Herramientas
+</Link>
 
               <Link
                 href="/ventas"

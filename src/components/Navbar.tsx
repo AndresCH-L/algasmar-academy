@@ -40,6 +40,11 @@ export default function Navbar() {
       href: "/cursos",
       icon: <BookOpen size={18} />,
     },
+{
+      name: "Oceanografia",
+      href: "/oceanografia",
+      icon: <BookOpen size={18} />,
+    },
 
     {
       name: "Biblioteca",

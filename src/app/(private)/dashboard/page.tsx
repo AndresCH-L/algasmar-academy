@@ -10,7 +10,7 @@ import {
   Library,
   ArrowRight,
   BarChart3,
-  Wrench,
+  Waves,
 } from "lucide-react";
 
 export default function DashboardPage() {
@@ -33,14 +33,14 @@ export default function DashboardPage() {
       color: "bg-orange-500",
     },
 
-    {
-      title: "Herramientas",
-      description:
-        "Equipos para producir valor agregado.",
-      icon: <Wrench size={40} />,
-      href: "/herramientas",
-      color: "bg-green-600",
-    },
+{
+  title: "Centro Oceanográfico",
+  description:
+    "Pronóstico inteligente para la recolección de algas marinas.",
+  icon: <Waves size={40} />,
+  href: "/oceanografia",
+  color: "bg-cyan-600",
+},
 
     {
       title: "Biblioteca",
