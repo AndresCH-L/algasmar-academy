@@ -1,38 +1,43 @@
-import Link from "next/link";
-import Image from "next/image";
+import NavbarLanding from "./landing/components/NavbarLanding";
+import HeroLanding from "./landing/components/HeroLanding";
+import FeaturesLanding from "./landing/components/FeaturesLanding";
+import ProcesoLanding from "./landing/components/ProcesoLanding";
+import CursosLanding from "./landing/components/CursosLanding";
+import OceanografiaLanding from "./landing/components/OceanografiaLanding";
+import MarketplaceLanding from "./landing/components/MarketplaceLanding";
+import StatsLanding from "./landing/components/StatsLanding";
+import NosotrosLanding from "./landing/components/NosotrosLanding";
+import CTALanding from "./landing/components/CTALanding";
+import FooterLanding from "./landing/components/FooterLanding";
+import FloatingButtons from "./landing/components/FloatingButtons";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-blue-900 via-blue-700 to-green-600 flex flex-col items-center justify-center text-white">
+    <main className="bg-white">
 
-      <div className="text-center px-6">
+      <NavbarLanding />
 
-        <Image
-          src="/images/logo/logo-algasmar-transparent.png"
-          alt="AlgasMar Academy"
-          width={220}
-          height={220}
-          className="mx-auto mb-8"
-          priority
-        />
+      <HeroLanding />
 
-        <h1 className="text-6xl font-extrabold mb-6">
-          AlgasMar Academy
-        </h1>
+      <FeaturesLanding />
 
-        <p className="text-xl mb-10 max-w-xl mx-auto">
-          Transformando algas marinas en oportunidades sostenibles
-        </p>
+      <ProcesoLanding />
 
-        <Link
-          href="/login"
-          className="bg-white text-blue-800 px-8 py-4 rounded-xl font-semibold shadow-lg hover:scale-105 transition"
-        >
-          Ingresar
-        </Link>
+      <CursosLanding />
 
-      </div>
+      <OceanografiaLanding />
 
+      <MarketplaceLanding />
+
+      <StatsLanding />
+
+      <NosotrosLanding />
+
+      <CTALanding />
+
+      <FooterLanding />
+
+      <FloatingButtons />
     </main>
   );
 }
