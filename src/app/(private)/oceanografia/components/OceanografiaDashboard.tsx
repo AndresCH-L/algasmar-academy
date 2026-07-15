@@ -159,10 +159,6 @@ export default function OceanografiaDashboard({
         pronostico={pronostico}
       />
 
-      {/* INDICADORES */}
-
-      
-
       {/* GRÁFICO DEL DÍA */}
 
       <GraficoOleaje

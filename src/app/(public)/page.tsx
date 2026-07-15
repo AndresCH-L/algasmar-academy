@@ -7,6 +7,7 @@ import OceanografiaLanding from "./landing/components/OceanografiaLanding";
 import MarketplaceLanding from "./landing/components/MarketplaceLanding";
 import StatsLanding from "./landing/components/StatsLanding";
 import NosotrosLanding from "./landing/components/NosotrosLanding";
+import PlanesLanding from "./landing/components/PlanesLanding";
 import CTALanding from "./landing/components/CTALanding";
 import FooterLanding from "./landing/components/FooterLanding";
 import FloatingButtons from "./landing/components/FloatingButtons";
@@ -32,6 +33,8 @@ export default function Home() {
       <StatsLanding />
 
       <NosotrosLanding />
+
+      <PlanesLanding />
 
       <CTALanding />
 
